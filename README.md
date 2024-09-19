@@ -21,6 +21,18 @@ and install OpenMM with
 2)
 To run OpenYAFF use:
 
-"openyaff initialize system.file pars.file"
+"openyaff initialize system.file.chk pars.file.txt"
 
+Check the config.yml file -- yaff part
 
+To get the topology.pdb file run:
+
+"openyaff --pdb save system.file.chk config.yml pars.file.txt"
+
+To get the system.xml run:
+
+"openyaff convert config.yml system.file.chk pars.file.txt"
+
+To check the validity of the generated files run:
+
+"openyaff validate config.yml system.file.chk pars.file.txt"
