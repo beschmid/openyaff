@@ -7,12 +7,15 @@ OpenYAFF is a conversion and validation tool that generates [OpenMM](openmm.org)
 
 
 1)
-Intall in the correct conda environment!
+Install in the correct conda environment!
 
 To install OpenYAFF use:
-pip install git+https://github.com/beschmid/openyaff.git
+
+"pip install git+https://github.com/beschmid/openyaff.git"
+
 and install OpenMM with
-pip install OpenMM
+
+"pip install OpenMM"
 
 
 2)
