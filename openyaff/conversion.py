@@ -3,8 +3,8 @@ import numpy as np
 import logging
 import xml.etree.ElementTree as ET
 import networkx as nx
-import simtk.openmm as mm
-import simtk.openmm.app
+import openmm as mm
+import openmm.app
 import simtk.unit as unit
 import molmod
 import tempfile

@@ -4,7 +4,7 @@ import numpy as np
 import xml.etree.ElementTree as ET
 import molmod
 import simtk.unit as unit
-import simtk.openmm as mm
+import openmm as mm
 
 
 logger = logging.getLogger(__name__) # logging per module
@@ -202,6 +202,7 @@ class MM3QuarticGenerator(BondGenerator):
                 )
 
 
+'''
 class Poly4Generator(ValenceMirroredGenerator):
     nffatype = 2
     prefix = 'POLY4'
@@ -261,6 +262,7 @@ class Poly4Generator(ValenceMirroredGenerator):
                 int(indexes[1]),
                 [C0, C1, C2, C3, C4, R0],
                 )
+'''
 
 
 class BendGenerator(ValenceMirroredGenerator):

@@ -1,8 +1,8 @@
 import molmod
 import tempfile
 import logging
-import simtk.openmm as mm
-import simtk.openmm.app
+import openmm as mm
+import openmm.app
 import simtk.unit as unit
 from lxml import etree
 import xml.etree.ElementTree as ET

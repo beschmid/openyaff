@@ -4,3 +4,18 @@
 
 
 OpenYAFF is a conversion and validation tool that generates [OpenMM](openmm.org) "System" instances based on [YAFF](https://github.com/molmod/yaff) force fields.
+
+
+1)
+Intall in the correct conda environment!
+
+To install OpenYAFF use:
+pip install git+https://github.com/beschmid/openyaff.git
+and install OpenMM with
+pip install OpenMM
+
+
+2)
+To run OpenYAFF use:
+
+

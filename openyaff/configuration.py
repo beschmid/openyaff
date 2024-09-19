@@ -8,8 +8,8 @@ import networkx as nx
 from copy import deepcopy
 from datetime import datetime
 
-import simtk.openmm as mm
-import simtk.openmm.app
+import openmm as mm
+import openmm.app
 import simtk.unit as unit
 
 from openyaff.utils import determine_rcut, transform_lower_triangular, \

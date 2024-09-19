@@ -2,7 +2,7 @@ import molmod
 import logging
 import numpy as np
 import simtk.unit as unit
-import simtk.openmm as mm
+import openmm as mm
 
 from openyaff.utils import yaff_generate, estimate_cell_derivative, \
         transform_symmetric

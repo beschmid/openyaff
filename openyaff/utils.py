@@ -2,8 +2,8 @@ import yaff
 import molmod
 import numpy as np
 import simtk.unit as unit
-import simtk.openmm.app
-import simtk.openmm as mm
+import openmm.app
+import openmm as mm
 
 from datetime import datetime
 
