@@ -21,4 +21,6 @@ and install OpenMM with
 2)
 To run OpenYAFF use:
 
+"openyaff initialize system.file pars.file"
+
 
