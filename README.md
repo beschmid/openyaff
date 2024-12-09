@@ -39,11 +39,18 @@ To check the validity of the generated files run:
 
 3)
 To use the OpenYAFF files in OpenMM use the following lines in the OpenMM script:
+
 "
+
 pdb = PDBFile('topology.pdb')
+
 forcefield = ForceField('system.xml')
 
+
 with open('system.xml', 'r') as f:
+
     content = f.read()
+    
 system = XmlSerializer.deserialize(content)
+
 "
