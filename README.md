@@ -11,46 +11,45 @@ Install in the correct conda environment!
 
 To install OpenYAFF use:
 
-"pip install git+https://github.com/beschmid/openyaff.git"
+    pip install git+https://github.com/beschmid/openyaff.git
 
 and install OpenMM with
 
-"pip install OpenMM"
+    pip install OpenMM
 
 
 2)
 To run OpenYAFF use:
 
-"openyaff initialize system.file.chk pars.file.txt"
+    openyaff initialize system.file.chk pars.file.txt
 
 Check the config.yml file -- yaff part
 
 To get the topology.pdb file run:
 
-"openyaff --pdb save system.file.chk config.yml pars.file.txt"
+    openyaff --pdb save system.file.chk config.yml pars.file.txt
 
 To get the system.xml run:
 
-"openyaff convert config.yml system.file.chk pars.file.txt"
+    openyaff convert config.yml system.file.chk pars.file.txt
 
 To check the validity of the generated files run:
 
-"openyaff validate config.yml system.file.chk pars.file.txt"
+    openyaff validate config.yml system.file.chk pars.file.txt
 
 3)
 To use the OpenYAFF files in OpenMM use the following lines in the OpenMM script:
 
-"
-
-pdb = PDBFile('topology.pdb')
-
-forcefield = ForceField('system.xml')
 
 
-with open('system.xml', 'r') as f:
+    pdb = PDBFile('topology.pdb')
 
-    content = f.read()
+    forcefield = ForceField('system.xml')
+
+
+    with open('system.xml', 'r') as f:
+
+        content = f.read()
     
-system = XmlSerializer.deserialize(content)
+    system = XmlSerializer.deserialize(content)
 
-"
